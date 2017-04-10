@@ -1,4 +1,5 @@
 require 'ostruct'
+require_relative "#{Rails.root}/lib/result_set"
 
 class Character < OpenStruct
   def self.all(page = 1)
