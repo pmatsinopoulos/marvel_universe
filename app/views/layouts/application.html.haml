@@ -21,6 +21,6 @@
 
     = javascript_include_tag 'application'
 
-  %body
+  %body{class: "#{controller_name} #{action_name}"}
     = render partial: 'layouts/application_navigation_bar'
     = yield
