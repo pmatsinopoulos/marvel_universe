@@ -10,7 +10,7 @@
 
     #navbar.collapse.navbar-collapse
       %ul.nav.navbar-nav
-        %li.active
+        %li{class: top_menu_active('Home')}
           = link_to 'Home', root_path
-        %li
+        %li{class: top_menu_active('Characters')}
           = link_to 'Characters', characters_path
