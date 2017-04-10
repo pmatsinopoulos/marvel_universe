@@ -1,1 +1,11 @@
+// 'bootstrap-sprockets' should be before 'bootstrap'
+@import 'bootstrap-sprockets';
+
+// variables should be overriden before the @import 'bootstrap'
+@import 'variable_overrides';
+
+@import 'bootstrap';
+@import 'bootstrap/theme';
+
+// custom CSS
 @import 'welcome';
