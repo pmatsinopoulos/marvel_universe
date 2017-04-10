@@ -6,6 +6,9 @@
 
 @import 'bootstrap';
 @import 'bootstrap/theme';
+@import 'ekko-lightbox/ekko-lightbox.min';
 
 // custom CSS
+@import 'global';
 @import 'welcome';
+@import 'characters';

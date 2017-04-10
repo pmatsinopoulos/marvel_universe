@@ -38,7 +38,10 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'haml-rails'
 
+gem 'faraday'
+
 group :development, :test do
+  gem 'dotenv-rails'
 end
 
 group :development do

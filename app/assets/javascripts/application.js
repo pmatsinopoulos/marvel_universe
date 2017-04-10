@@ -10,4 +10,8 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require_tree .
+//= require 'cable'
+//= require 'third_party'
+//= require 'ekko-lightbox/ekko-lightbox.min'
+//= require 'enable_lightbox'
+

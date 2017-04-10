@@ -1,1 +1,23 @@
 %h1 Characters
+%small= @result_set.copyright.html_safe
+
+%div.table-responsive
+  %table.table.table-condensed.table-striped
+    %thead
+      %tr
+        %th.text-right{colspan: 2}
+          = render partial: 'shared/pagination', locals: {pagination: Pagination.build(result_set: @result_set, path: :characters_path)}
+      %tr
+        %th.text-center Name
+        %th
+          &nbsp;
+    %tbody
+      - @result_set.characters.each do |character|
+        %tr
+          %td= character.name
+          %td
+            = link_to character.thumbnail, data: {toggle: 'lightbox', gallery: 'characters-index', title: character.name, footer: character.description} do
+              = image_tag character.thumbnail, width: 60, height: 60
+      %tr
+        %th.text-right{colspan: 2}
+          = render partial: 'shared/pagination', locals: {pagination: Pagination.build(result_set: @result_set, path: :characters_path)}
