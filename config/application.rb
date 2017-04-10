@@ -16,11 +16,13 @@ require "sprockets/railtie"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+require_relative '../lib/result_set'
+require_relative '../lib/pagination'
+
 module MarvelUniverse
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
-    config.autoload_paths << File.join(File.expand_path('..', __FILE__), '..', 'lib')
   end
 end
