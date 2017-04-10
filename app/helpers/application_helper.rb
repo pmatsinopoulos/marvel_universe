@@ -12,4 +12,8 @@ module ApplicationHelper
       end
     end
   end
+
+  def url_to_tcb
+    'https://www.techcareerbooster.com/?utm_source=tcb_web_app&utm_medium=marvelu_web_app&utm_campaign=general'
+  end
 end
