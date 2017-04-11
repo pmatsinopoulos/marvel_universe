@@ -1,9 +1,9 @@
 - unless pagination.current_page == 1
-  = link_to 'first', public_send(pagination.path, page: 1), class: 'pagination-navigation'
+  = link_to 'first', public_send(pagination.path, page: 1, q: pagination.search_term), class: 'pagination-navigation'
 - if pagination.previous_page
-  = link_to '<<', public_send(pagination.path, page: pagination.current_page - 1), class: 'pagination-navigation'
+  = link_to '<<', public_send(pagination.path, page: pagination.current_page - 1, q: pagination.search_term), class: 'pagination-navigation'
 = "#{pagination.start_index} - #{pagination.end_index} / #{pagination.total}"
 - if pagination.next_page
-  = link_to '>>', public_send(pagination.path, page: pagination.current_page + 1), class: 'pagination-navigation'
+  = link_to '>>', public_send(pagination.path, page: pagination.current_page + 1, q: pagination.search_term), class: 'pagination-navigation'
 - unless pagination.current_page == pagination.last_page
-  = link_to 'last', public_send(pagination.path, page: pagination.last_page), class: 'pagination-navigation'
+  = link_to 'last', public_send(pagination.path, page: pagination.last_page, q: pagination.search_term), class: 'pagination-navigation'

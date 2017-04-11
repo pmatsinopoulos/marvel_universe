@@ -7,6 +7,7 @@ class ResultSet
                 :limit,
                 :next_page,
                 :previous_page,
+                :search_term,
                 :start_index,
                 :total
   alias :previous_page? :previous_page
@@ -19,6 +20,7 @@ class ResultSet
                  limit:,
                  next_page:,
                  previous_page:,
+                 search_term:,
                  start_index:,
                  total:)
     @characters = characters
@@ -27,6 +29,7 @@ class ResultSet
     @end_index = end_index
     @next_page = next_page
     @previous_page = previous_page
+    @search_term = search_term
     @start_index = start_index
     @total = total
     @last_page = total % limit != 0 ? total / limit + 1 : total / limit

@@ -5,6 +5,7 @@ class Pagination
               :next_page,
               :previous_page,
               :path,
+              :search_term,
               :start_index,
               :total
 
@@ -14,6 +15,7 @@ class Pagination
                  next_page:,
                  previous_page:,
                  path:,
+                 search_term:,
                  start_index:,
                  total:)
     @current_page = current_page
@@ -22,6 +24,7 @@ class Pagination
     @next_page = next_page
     @previous_page = previous_page
     @path = path
+    @search_term = search_term
     @start_index = start_index
     @total = total
   end
@@ -34,6 +37,7 @@ class Pagination
         next_page: result_set.next_page,
         previous_page: result_set.previous_page,
         path: path,
+        search_term: result_set.search_term,
         start_index: result_set.start_index,
         total: result_set.total
     )

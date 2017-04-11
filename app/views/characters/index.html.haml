@@ -1,6 +1,13 @@
 %h1 Characters
 %small= @result_set.copyright.html_safe
 
+%hr
+
+= form_tag characters_path(page: @result_set.current_page), method: :get, class: 'form-inline' do
+  .form-group
+    = text_field_tag :q, @result_set.search_term, class: 'form-control', placeholder: 'name starts with'
+  = button_tag 'Search', class: 'btn btn-default'
+
 %div.table-responsive
   %table.table.table-condensed.table-striped
     %thead
