@@ -1,24 +1,16 @@
-# README
+# Marvel API Integration Demo Application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Introduction
 
-Things you may want to cover:
+This is a demo application that shows you how you can integrate [Marvel API](https://developer.marvel.com/) with your Ruby on Rails application.
 
-* Ruby version
+## Contribution
 
-* System dependencies
+If you like Marvel and would like to build something big with this, let's do it together. Contributions to this code is more than welcome.
 
-* Configuration
+---
 
-* Database creation
+#### Who is Behind This
 
-* Database initialization
+[TCB](https://www.techcareerbooster.com)
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
